@@ -9,11 +9,20 @@
   </head>
   <body>
     <!-- contenedor general -->
-    <div class="bg-secondary p-5 d-flex" style="--bs-bg-opacity: 0.1">
+    <div
+      class="bg-secondary p-5 d-flex vh-100 vw-100 justify-content-center align-items-center"
+      style="--bs-bg-opacity: 0.1"
+    >
       <!-- contenedor central -->
-      <div class="d-flex container flex-column justify-content-betwee align-items-center gap-2" style="--bs-bg-opacity: 1">
+      <div
+        class="d-flex container flex-column justify-content-center align-items-center gap-4 vh-100"
+        style="--bs-bg-opacity: 1"
+      >
         <!-- contenedor arriba -->
-        <div class="bg-light d-flex flex-column p-5 align-items-start gap-2 shadow w-50 ">
+        <div
+          class="bg-light d-flex flex-column p-5 align-items-start gap-2 shadow rounded-0"
+          style="height: 55%; width: 40%; min-width: 450px; max-height: 350px"
+        >
           <img
             class="logo"
             role="img"
@@ -23,21 +32,54 @@
             src="https://logincdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg"
             alt="Microsoft"
           />
-          <span class="fs-4 fw-bolder">Sign in</span>
+          <span class="fs-4 fw-semibold m-1 ms-0">Sign in</span>
 
           <input
             type="email"
-            class="form-control"
+            class="form-control border-top-0 border-start-0 border-end-0 border-primary rounded-0 text-start bg-transparent"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
+            value="Email, phone, or Skype"
           />
 
-          <span class="fs-6 ">No account? <a href="https://www.google.com">Create one</a></span>
-          <button type="button" class="btn btn-primary align-self-end">Next</button>
+          <span class="m-2 ms-0" style="font-size: .8125rem"
+            >No account?
+            <a class="text-decoration-none" href="https://www.google.com"
+              >Create one!</a
+            ></span
+          >
+          <span class="m-1 ms-0 text-decoration-none" style="font-size: 13px"
+            ><a class="text-decoration-none" href="https://www.google.com">
+              Sign in with a security key </a
+            ><img
+              role="presentation"
+              pngsrc="https://logincdn.msauth.net/shared/1.0/content/images/documentation_9628e22a6bfb1edc59e81064a666b614.png"
+              svgsrc="https://logincdn.msauth.net/shared/1.0/content/images/documentation_bcb4d1dc4eae64f0b2b2538209d8435a.svg"
+              data-bind="imgSrc"
+              src="https://logincdn.msauth.net/shared/1.0/content/images/documentation_bcb4d1dc4eae64f0b2b2538209d8435a.svg"
+          /></span>
+          <button
+            type="button"
+            class="btn btn-primary align-self-end rounded-0 mt-auto"
+            style="width: 30%"
+          >
+            Next
+          </button>
         </div>
         <!-- contenedor abajo -->
-        <button type="button" class="btn btn-light shadow w-50">Sign-in options</button>
-
+        <button
+          type="button"
+          class="btn btn-light shadow rounded-0 text-start"
+          style="width: 40%; height: 9%; min-width: 450px; max-height: 60px; font-size: 15px"
+        >
+          <img
+            class="tile-img medium me-2 ms-4"
+            role="presentation"
+            style="width: 32px; height:32px;"
+            data-bind="attr: { src: $data.darkIconUrl }"
+            src="https://logincdn.msauth.net/shared/1.0/content/images/signin-options_4e48046ce74f4b89d45037c90576bfac.svg"
+          /> Sign-in options
+        </button>
       </div>
     </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
